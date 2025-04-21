@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const NavBar = () => {
     const links = (
         <div className="flex gap-15 font-bold cursor-pointer">
-            <li>Home</li>
-            <li>Listed Books</li>
-            <li>Pages to Read</li>
+            <NavLink to={'/home'}>Home</NavLink>
+            <NavLink to={'/listedBooks'}>Listed Books</NavLink>
+            <NavLink to={'/pagesToRead'}>Pages to Read</NavLink>
         </div>
     );
     return (

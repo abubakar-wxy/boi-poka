@@ -4,11 +4,11 @@ import Books from '../Books/Books';
 
 const Home = () => {
     const data = useLoaderData();
-    console.log(data)
+
     return (
         <div>
             <Banner></Banner>
-            <Books></Books>
+            <Books data={data}></Books>
         </div>
     );
 };
