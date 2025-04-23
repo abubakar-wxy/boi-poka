@@ -6,8 +6,8 @@ const Book = ({ singleBook }) => {
     // const data = use(bookPromise);
     // console.log(data)
 
-    const {bookName, image, tags, author, rating, category, bookId} = singleBook;
-    console.log(singleBook);
+    const {bookName, image, author, rating, category, bookId} = singleBook;
+    // console.log(singleBook);
 
     return (
         <Link to={`/bookDetails/${bookId}`}>
